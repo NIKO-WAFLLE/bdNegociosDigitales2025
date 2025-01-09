@@ -1,0 +1,2 @@
+--creacion de base de datos SQL-server
+-- en contruccion 
