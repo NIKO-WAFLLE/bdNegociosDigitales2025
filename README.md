@@ -9,7 +9,7 @@
 1. manipulacion Avanzada (joins subconsultas,store, procedures, trigger, index y viewa)
 1. manejo de trasacciones
 1. Base de datos Nosql
-![BASE DE DATOS](./images/ONESHOT.png)
+![BASE DE DATOS](./unidad_1/img/ONESHOT.png)
 > [!IMPORTANTE]
 > prueva 01
 
