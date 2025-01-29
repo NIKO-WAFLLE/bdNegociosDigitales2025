@@ -62,8 +62,16 @@ day(OrderDate) as Dia,
 CustomerID, EmployeeID 
 from Orders;
 
+-- filas duplicadas (distinct)
+select * from Customers;
+-- mostrar los paises donde se tienen clientes, mostrando pais solamente 
+
+select distinct Country as paises from Customers 
+
+order by Country;
+
 -- clausulas where
--- operadores relacionales (<,>,=,<=,=>,!=, <>)
+-- operadores relacionales o test de comparacion (<,>,=,<=,=>,!=, <>)
 
 select * from Customers;
 -- Seleccionar el cliente Bolid
@@ -105,3 +113,50 @@ select OrderDate as fechasOrden,
 	CustomerID as cliente
 from Orders
 where year(OrderDate) = 1996;
+
+--mostrar todas las ordenes de compra donde la cantidad de productos comprados 
+-- se mayor de 40
+
+select * from [Order Details]
+where Quantity >= 40;
+
+-- mostar el nombre completo del empleado, numero de empleado, fecha de nacimiento
+-- ciuadad, fecha de contratacion y esta debe ser de aquellos que fueron contratados
+-- despues de 1993, los resultados en sus encabezadis deben ser mostrados en espanol
+
+select * from Employees;
+
+
+select FirstName as primer_nombre, LastName as apelllido,
+BirthDate as nacimiento, City as ciudad, HireDate as fecha_contratacion
+from Employees
+where YEAR(HireDate) > 1993;
+
+-- concatenacion 
+
+select EmployeeID as numero,
+(FirstName + ' ' + LastName) as nombre,
+BirthDate as nacimiento, City as ciudad, HireDate as fecha_contratacion
+from Employees
+where YEAR(HireDate) > 1993;
+
+--segunda opcion
+
+select EmployeeID as numero,
+concat(FirstName, ' ' , LastName) as [nombre completo],
+BirthDate as nacimiento, City as ciudad, HireDate as fecha_contratacion
+from Employees
+where YEAR(HireDate) > 1993;
+
+-- mostrar los empleados que no son dirigidos por el jefe 2
+
+select * from Employees
+
+select * from Employees where [ReportsTo] != 2;
+
+select EmployeeID as numero,
+concat(FirstName, ' ' , LastName) as [nombre completo],
+BirthDate as nacimiento, City as ciudad, HireDate as fecha_contratacion,
+[ReportsTo] as jefe
+from Employees
+where [ReportsTo] != 2;
