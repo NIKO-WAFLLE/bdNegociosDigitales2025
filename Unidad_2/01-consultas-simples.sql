@@ -375,3 +375,55 @@ and not City in ('London', 'seatlle');
 
 	select FirstName, LastName from Employees
 	where FirstName like 'A_____';
+
+	-- seleccionar los productos que comiencen con a o b
+
+		select * from Products
+		where ProductName like '[ABc]%' ;
+
+		select * from Products 
+		where ProductName like '[A-m]%' order by ProductName;
+
+		-- seleccionar todos los productos que no comiencen con A O B
+
+		-- ^ ASENTO SIRCUNFLEJO
+
+		select * from Products
+		where ProductName like '[^AB]%' order by ProductName;
+
+		-- SELECCIONAR TODOS LOS PRODUCTOS DONDE EL NOMBRE QUE COMIENSE CON A
+		-- PERO QUE COMIENSE CON A PERO NO CONTENGA LA E
+
+		SELECT * FROM Products
+		WHERE ProductName LIKE 'A[^E]%';
+
+		-- CLAUSULA ORDER BY
+		
+		-- DESC -	DESEBDIENTE 
+		-- ASC	-	ACENDENTE 
+
+		SELECT ProductID, ProductName, UnitPrice AS 'PRECIO', UnitsInStock from Products
+		order by 'PRECIO' Asc;
+
+		-- seleccionar los clientes ordenados por pais y demtro por ciudad
+
+		select CustomerID, Country, City from Customers
+		order by Country asc, City desc;
+
+		select CustomerID, Country, City from Customers
+		where Country in ('Brazil' , 'Germany')
+		order by Country asc, City desc;
+
+			select CustomerID, Country, City from Customers
+		where Country in ('Brazil' , 'Germany')
+		and region is not null
+		order by Country asc, City desc;
+
+		
+			select CustomerID, Country, City from Customers
+		where (Country = 'Brazil' or Country = 'Germany')
+		and region is not null
+		order by Country asc, City desc;
+
+
+
