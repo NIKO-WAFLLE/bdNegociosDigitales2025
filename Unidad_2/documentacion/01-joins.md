@@ -1,3 +1,7 @@
+# Inner join 
+![Inner join ](../img/img_inner_join.png)
+
+```sql
 --	joins	-- juntan
 
 --	inner	-select * from tabla inner tabla2 on campo1(estos tienen que ser del mismo valor)campo2
@@ -201,9 +205,11 @@ ON OD.OrderID = O.OrderID
 GROUP BY 
 
 --11  listar los clientes y la cantidad de pedidos que han realizado
-
-
-
+/*
+SELECT   
+	c.ContactName, 
+    SUM(od.Quantity) AS TotalQuantity 
+	*/
 FROM Customers AS C
 INNER JOIN
 Orders AS O
@@ -406,7 +412,7 @@ from Orders as o
 inner join Employees as e
 on o.EmployeeID = e.EmployeeID
 group by e.FirstName, e.LastName
-order by [nombre] asc
+orderÂ byÂ [nombre]Â asc
 -- 21 listar las categorias con el total de ingresos generados por sus productos 
 
 
@@ -490,9 +496,12 @@ group by c.CompanyName
 having sum (od.Quantity * od.UnitPrice) between 500 and 3500
 
 -- consultas avanzadas
--- left join, right join , full join y cross join 
+-- les
 
+
+```
+
+> 20/02/2025
 -- JOINS, left 
 -- STORES Y TRIGERS
 -- VISTAR INDICES
-
