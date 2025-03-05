@@ -201,9 +201,11 @@ ON OD.OrderID = O.OrderID
 GROUP BY 
 
 --11  listar los clientes y la cantidad de pedidos que han realizado
-
-
-
+/*
+SELECT   
+	c.ContactName, 
+    SUM(od.Quantity) AS TotalQuantity 
+	*/
 FROM Customers AS C
 INNER JOIN
 Orders AS O
@@ -489,8 +491,16 @@ on od.OrderID = o.OrderID
 group by c.CompanyName
 having sum (od.Quantity * od.UnitPrice) between 500 and 3500
 
+-- practica de utilizacion de left join
+
+--seleccionar los datos que se van a utilizar para insertar
+--en la tabla prducts_new
+
+-- produc_id, productName, customer,  categoty, UnitPrice, discontinued, Inserted_date
+
+
 -- consultas avanzadas
--- left join, right join , full join y cross join 
+-- les
 
 -- JOINS, left 
 -- STORES Y TRIGERS
