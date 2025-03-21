@@ -1,3 +1,8 @@
+# views- transact-funciones- cadena
+
+![cadeas](../img/FuncionesDeCadena.jpg)
+
+```sql
 -- funciones de cadena
 
 -- las funciones de cadena permite manipular tipos de datos
@@ -80,9 +85,9 @@ go
 select c.CompanyName, upper(c.CompanyName) from Customers as c
 
 update Customers
-
 set CompanyName = upper (CompanyName)
 where Country in ('mexico', 'germany') 
 
 select * from Customers
 where Country in ('mexico', 'germany') 
+```
