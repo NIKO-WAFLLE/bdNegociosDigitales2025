@@ -1,4 +1,5 @@
 # query ejemplo, left join
+> El **LEFT JOIN** en SQL Server devuelve todos los registros de la tabla izquierda y los datos coincidentes de la tabla derecha. Si no hay coincidencia, muestra NULL en las columnas de la tabla derecha. Es útil para mantener todos los datos principales.
 
 ![Leftjoin](../img/img_left_join.png)
 ```sql

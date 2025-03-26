@@ -1,4 +1,6 @@
 # Views SQL
+> Las **Views** en SQL son vistas virtuales que muestran resultados de una consulta predefinida. No almacenan datos, pero permiten simplificar consultas complejas, mejorar la seguridad y facilitar el acceso a información específica sin exponer toda la base de datos.
+
 ![View](../img/ViewInSql.png)
 ```sql
 -- views

@@ -1,4 +1,7 @@
 # Ejercicios de colsultas y agregado
+
+> Las **consultas** en SQL Server permiten recuperar, filtrar y organizar datos de una o varias tablas. Las funciones de **agregado** (como SUM, AVG, COUNT) sirven para calcular valores resumen, ayudando a analizar grandes cantidades de datos de forma eficiente.
+
 ![GREGADO](../img/FuncionesDeAgregado.jpeg)
 
 

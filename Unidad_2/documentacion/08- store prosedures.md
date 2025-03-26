@@ -1,4 +1,6 @@
-# store prosedures
+# Store Procedures
+> Son bloques de código SQL guardados en la base de datos. Ejecutan tareas específicas como consultas, validaciones o actualizaciones. Mejoran el rendimiento, la seguridad y permiten reutilizar instrucciones complejas de forma eficiente y controlada.
+
 ![sote](../img/StoresProcedure.png)
 
 ```sql

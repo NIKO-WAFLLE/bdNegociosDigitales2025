@@ -1,4 +1,11 @@
 # views- transact-funciones- cadena
+> **Views:** Son consultas guardadas como vistas virtuales. Facilitan el acceso a datos complejos, mejoran la seguridad y no almacenan información, solo muestran resultados predefinidos.
+
+> **Transact-SQL:** Es el lenguaje extendido de SQL en SQL Server. Permite programar con variables, condiciones y ciclos para crear consultas más dinámicas y procedimientos.
+
+> **Funciones:** Son bloques que realizan cálculos y devuelven resultados. Pueden ser escalares o de tabla, y ayudan a reutilizar lógica dentro de consultas o procedimientos.
+
+> **Funciones de cadena:** Manipulan texto en SQL. Permiten contar, reemplazar, extraer o convertir letras, facilitando el trabajo con datos de tipo texto.
 
 ![cadeas](../img/FuncionesDeCadena.jpg)
 
