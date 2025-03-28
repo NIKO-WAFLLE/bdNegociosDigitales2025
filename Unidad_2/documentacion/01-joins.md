@@ -1,5 +1,8 @@
-# Inner join 
+# Inner join
+> Los JOINS en SQL Server permiten combinar datos de dos o más tablas relacionadas mediante una condición. Así se pueden consultar datos distribuidos en varias tablas como si fueran una sola, facilitando análisis y reportes complejos.
+
 ![Inner join ](../img/img_inner_join.png)
+
 
 ```sql
 --	joins	-- juntan
