@@ -200,7 +200,7 @@ db.alumnos.insertMany(
 
 .   >   $gt
 
-.   <   $it
+.   <   $lt
 
 .   >=  $gte
 
@@ -774,7 +774,7 @@ db.libros.find({}).limit(2)
 db.libros.find({}).skip(2).limit(2)
 ```
 ## borrar colecciones y baces de datos
-db.libros.drop()
+db.cursos.drop()
 
 bd.dropDatabase()
 
